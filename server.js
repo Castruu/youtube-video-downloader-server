@@ -6,8 +6,6 @@ const path = require('path');
 
 app.use(cors());
 
-
-
 app.get('/download/:format', async (req, res) => {
   try {
     if (!["mp3", "mp4"].includes(req.params.format)) return res.json({status: "Failed", message: "Invalid format"});
