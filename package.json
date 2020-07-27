@@ -1,0 +1,25 @@
+{
+  "name": "youtube-video-baixador",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ghostakari-s/youtube-video-baixador.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ghostakari-s/youtube-video-baixador/issues"
+  },
+  "homepage": "https://github.com/ghostakari-s/youtube-video-baixador#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "ytdl-core": "^3.1.3"
+  }
+}
