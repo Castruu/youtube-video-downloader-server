@@ -20,9 +20,9 @@ app.get('/download/:format', async (req, res) => {
       });
     }
 
-    const videoDetails = await (await ytdl.getBasicInfo(req.query.url)).videoDetails;
+    const basicInfo = await ytdl.getBasicInfo(req.query.url);
 
-    res.header('Content-Disposition', `attachment; filename="${videoDetails.title}.${req.params.format.toLowerCase()}"`);
+    res.header('Content-Disposition', `attachment; filename="${basicInfo.videoDetails.title}.${req.params.format.toLowerCase()}"`);
     await ytdl(req.query.url, downloadOptions).pipe(res)
 
   } catch (err) {
